@@ -640,14 +640,40 @@ section[id] { scroll-margin-top: 64px; }
   .dl-meta { border-right: none; border-bottom: 1px solid var(--border); }
 }
 @media (max-width: 640px) {
-  .nav { padding: 0 16px; gap: 12px; }
+  .nav { padding: 0 14px; gap: 12px; }
   .nav-links { display: none; }
+  .brand-word { font-size: 15px; }
+  /* 小屏导航按钮瘦身：只留“下载”二字 */
+  .nav-cta { padding: 8px 14px; font-size: 12.5px; }
+  .nav-cta span { display: none; }
+  .theme-toggle { width: 32px; height: 32px; }
+
   .hero-inner, .section-head, .feature-grid, .craft-row, .log-list, .faq-list { padding-left: 22px; padding-right: 22px; }
+  .hero-title { font-size: clamp(52px, 15vw, 64px); }
+  .hero-slogan { font-size: 17px; }
+  .hero-actions .btn { flex: 1; justify-content: center; }
+
+  /* 界面模型在小屏收窄 */
+  .mock-sidebar { width: 104px; padding: 12px 6px; }
+  .mock-nav { font-size: 10px; padding: 7px 8px 7px 12px; }
+  .mock-body { height: 300px; }
+  .mock-content { padding: 12px; gap: 10px; }
+
   .feature-grid, .craft-row { grid-template-columns: 1fr; }
   .craft-item { border-left: none; border-top: 1px solid var(--border); }
   .craft-item:first-child { border-top: none; }
+
   .dl-panel, .dl-hint { width: calc(100% - 44px); }
   .dl-meta, .dl-rows { padding: 32px 26px; }
+  /* 下载行小屏换行：文件信息挪到第二行，收起箭头 */
+  .dl-row { flex-wrap: wrap; }
+  .dl-row-sub { width: 100%; margin: 4px 0 0 36px; }
+  .dl-row-arrow { display: none; }
+  .dl-facts .sha-val { max-width: 130px; }
+
   .log-row { grid-template-columns: 1fr; gap: 8px; }
   .mock-window { transform: none; animation: none; }
+  .to-top { right: 16px; bottom: 16px; width: 42px; height: 42px; }
+  .footer-inner { padding: 22px; gap: 16px; }
+  .footer-row { margin-left: 0; }
 }
