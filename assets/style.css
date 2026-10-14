@@ -180,9 +180,18 @@ a { color: inherit; }
 }
 
 /* 亮色主题下光效减半，保持纸面干净 */
-[data-theme="light"] .aurora-1 { background: radial-gradient(circle, rgba(0, 103, 192, 0.07), transparent 62%); }
-[data-theme="light"] .aurora-2 { background: radial-gradient(circle, rgba(0, 103, 192, 0.06), transparent 62%); }
-[data-theme="light"] .aurora-3 { background: radial-gradient(circle, rgba(0, 103, 192, 0.04), transparent 60%); }
+[data-theme="light"] .aurora-1 { background: radial-gradient(circle, rgba(0, 103, 192, 0.11), transparent 62%); }
+[data-theme="light"] .aurora-2 { background: radial-gradient(circle, rgba(0, 103, 192, 0.09), transparent 62%); }
+[data-theme="light"] .aurora-3 { background: radial-gradient(circle, rgba(0, 103, 192, 0.07), transparent 60%); }
+
+/* 亮色主题专属点缀：点阵网格，向四周渐隐 */
+[data-theme="light"] .bg-fx::after {
+  content: ""; position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.09) 1.2px, transparent 1.6px);
+  background-size: 26px 26px;
+  -webkit-mask-image: radial-gradient(ellipse 90% 75% at 50% 40%, #000 30%, transparent 78%);
+          mask-image: radial-gradient(ellipse 90% 75% at 50% 40%, #000 30%, transparent 78%);
+}
 
 /* ---------- 按钮 ---------- */
 .btn {
