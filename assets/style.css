@@ -118,7 +118,12 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  /* 禁止手机浏览器（尤其安卓内置浏览器）自动放大字体打乱排版 */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 
 body {
   background: var(--bg);
@@ -375,10 +380,11 @@ a { color: inherit; }
 .w25 { width: 25%; } .w35 { width: 35%; } .w45 { width: 45%; }
 .w60 { width: 60%; } .w70 { width: 70%; } .w85 { width: 85%; } .w90 { width: 90%; }
 
-.mock-chips { display: flex; gap: 7px; }
+.mock-chips { display: flex; gap: 7px; flex-wrap: wrap; }
 .chip {
   font-size: 10.5px; padding: 4px 14px; border-radius: 999px;
   border: 1px solid var(--border-strong); color: var(--text-dim);
+  white-space: nowrap; flex-shrink: 0;   /* 窄屏也不许文字竖排断行 */
 }
 .chip.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
 
@@ -739,6 +745,9 @@ section[id] { scroll-margin-top: 64px; }
   .mock-nav { font-size: 10px; padding: 7px 8px 7px 12px; }
   .mock-body { height: 300px; }
   .mock-content { padding: 12px; gap: 10px; }
+  .mock-chips { gap: 6px; }
+  .chip { padding: 4px 11px; font-size: 10px; }
+  .mock-btns .mbtn { padding: 6px 12px; font-size: 10px; }
 
   .feature-grid, .craft-row { grid-template-columns: 1fr; }
   .craft-item { border-left: none; border-top: 1px solid var(--border); }
