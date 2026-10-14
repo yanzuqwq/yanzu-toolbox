@@ -17,16 +17,16 @@ window.RELEASES = {
   /* 最新版本信息（1.3.8 正式版 · 2026-10-14 构建 · zip 压缩包） */
   latest: "1.3.8",
   date: "2026-10-14",
-  size: "24.9 MB",
+  size: "26.1 MB",
   platform: "Windows 10 / 11 · x64",
-  sha256: "101949C7D7B941A336BF796AEE6D4424D18EDDD9EC22EFB3EBFCC7486AEEF147",
+  sha256: "D0ECE412BA9B8C415041AE0BC17D471D330EDD09BEB71E6536F006F48FF0A9C7",
 
   /* 下载渠道：primary 为主按钮 */
   downloads: [
     {
       label: "彦祖工具箱.zip",
       sub: "解压即用，无需安装",
-      file: "1.3.8 · 24.9 MB",
+      file: "1.3.8 · 26.1 MB",
       url: "download/彦祖工具箱-1.3.8.zip",
       primary: true
     },
