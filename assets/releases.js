@@ -14,20 +14,20 @@
 window.RELEASES = {
   name: "彦祖工具箱",
 
-  /* 最新版本信息（1.3.8 正式版 · 2026-10-14 构建 · zip 压缩包） */
-  latest: "1.3.8",
-  date: "2026-10-14",
+  /* 最新版本信息（1.3.9 正式版 · 2026-10-16 构建 · zip 压缩包） */
+  latest: "1.3.9",
+  date: "2026-10-16",
   size: "26.1 MB",
   platform: "Windows 10 / 11 · x64",
-  sha256: "D0ECE412BA9B8C415041AE0BC17D471D330EDD09BEB71E6536F006F48FF0A9C7",
+  sha256: "C044254E71A953F9BDB06407073F2B255CE788281D4D564B76FD35F204E7A117",
 
   /* 下载渠道：primary 为主按钮 */
   downloads: [
     {
       label: "彦祖工具箱.zip",
       sub: "解压即用，无需安装",
-      file: "1.3.8 · 26.1 MB",
-      url: "download/彦祖工具箱-1.3.8.zip",
+      file: "1.3.9 · 26.1 MB",
+      url: "download/彦祖工具箱-1.3.9.zip",
       primary: true
     },
     {
@@ -42,9 +42,14 @@ window.RELEASES = {
   /* 更新日志（按项目 git 历史整理）：新的版本放最上面，一条一句话就够 */
   history: [
     {
+      version: "1.3.9",
+      date: "2026-10-16",
+      tag: "最新",
+      notes: ["浅色主题翻新（网站同款珊瑚橙 + 极光波点）、窗口底边自由拉伸、新增设置页与关闭提醒"]
+    },
+    {
       version: "1.3.8",
       date: "2026-10-14",
-      tag: "最新",
       notes: ["新增一键检测与托盘快捷菜单、FPS 优化组，弹窗统一为应用风格"]
     },
     {
