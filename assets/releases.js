@@ -14,20 +14,20 @@
 window.RELEASES = {
   name: "彦祖工具箱",
 
-  /* 最新版本信息（1.3.9 正式版 · 2026-10-16 构建 · zip 压缩包） */
+  /* 最新版本信息（1.3.9 正式版 · 2026-10-16 构建） */
   latest: "1.3.9",
   date: "2026-10-16",
-  size: "26.1 MB",
+  size: "26.4 MB",
   platform: "Windows 10 / 11 · x64",
-  sha256: "C044254E71A953F9BDB06407073F2B255CE788281D4D564B76FD35F204E7A117",
+  sha256: "7F68CABE3E6FD30BC0044028FDF6E07F0B3D551F86FAC3C247A153E5D774CA8F",
 
   /* 下载渠道：primary 为主按钮 */
   downloads: [
     {
-      label: "彦祖工具箱.zip",
-      sub: "解压即用，无需安装",
-      file: "1.3.9 · 26.1 MB",
-      url: "download/彦祖工具箱-1.3.9.zip",
+      label: "彦祖工具箱.exe",
+      sub: "下载即用，无需安装",
+      file: "1.3.9 · 26.4 MB",
+      url: "download/yanzu-toolbox-1.3.9.exe",
       primary: true
     },
     {
@@ -45,7 +45,10 @@ window.RELEASES = {
       version: "1.3.9",
       date: "2026-10-16",
       tag: "最新",
-      notes: ["浅色主题翻新（网站同款珊瑚橙 + 极光波点）、窗口底边自由拉伸、新增设置页与关闭提醒"]
+      notes: [
+        "浅色主题翻新（网站同款珊瑚橙 + 极光波点）、窗口底边自由拉伸、新增设置页与关闭提醒",
+        "UI 细节打磨：下拉弹窗真圆角限高滚动、进程框输入与展开分离、浅色下控件对比度全面修复"
+      ]
     },
     {
       version: "1.3.8",
