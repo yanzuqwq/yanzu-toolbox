@@ -48,8 +48,8 @@
       <h1 class="hero-title reveal">彦祖<br>工具箱</h1>
       <p class="hero-slogan reveal">Windows 游戏性能调校，一站式完成。</p>
       <p class="hero-desc reveal">
-        显卡伪装、画面色彩、核心调度、电源解锁、网络加速 ——
-        进游戏前的最后一步。免费、单文件、无广告。
+        显卡伪装、画面色彩、进程调度、电源解锁、网络加速 ——
+        进游戏前的最后一步。全部改动事务化，随时可还原。
       </p>
       <div class="hero-actions reveal">
         <a class="btn btn-accent btn-lg" id="hero-download" href="#download">
@@ -61,7 +61,7 @@
       <div class="hero-meta mono reveal">
         <span>免费</span><i>/</i>
         <span>无需安装</span><i>/</i>
-        <span id="hero-size">25.1 MB</span><i>/</i>
+        <span id="hero-size">26.5 MB</span><i>/</i>
         <span>Windows 10 · 11</span>
       </div>
     </div>
@@ -91,7 +91,7 @@
             <div class="mock-card">
               <span class="bar w35 label"></span>
               <div class="mock-chips">
-                <span class="chip">实时</span><span class="chip on">高</span><span class="chip">标准</span><span class="chip">低</span>
+                <span class="chip">跟随</span><span class="chip on">锚定</span><span class="chip">省电</span><span class="chip">自选</span>
               </div>
               <span class="bar w90"></span>
               <span class="bar w70"></span>
@@ -135,10 +135,10 @@
     <article class="feature reveal">
       <div class="feature-top">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
-        <span class="mono feature-tag">CCD / AFFINITY</span>
+        <span class="mono feature-tag">AFFINITY / CPU SETS</span>
       </div>
       <h3>应用调度</h3>
-      <p>CPU 拓扑可视化，物理核 / SMT / 大小核一眼分清。亲和性、CCD 绑核（仅 AMD）、进程 / I/O / 内存优先级一次下发。</p>
+      <p>7 种进程绑定模式 + 3 种线程级钉核，自动识别渲染线程并锚定高性能核域。GPU 优先级、0.5ms 计时器、启动后自动应用，写入事务化、失败整体回滚。</p>
     </article>
 
     <article class="feature reveal">
@@ -174,7 +174,7 @@
         <span class="mono feature-tag">JOURNAL</span>
       </div>
       <h3>改动记录</h3>
-      <p>程序做过的全部持久改动都记入台账：改了什么、原值是多少。支持单条还原或一键全部还原，回读校验。</p>
+      <p>程序做过的全部持久改动都记入台账：改了什么、原值是多少。显卡名称也走这里，不再需要单独备份；支持单条还原或一键全部还原。</p>
     </article>
 
     <article class="feature reveal">
@@ -205,12 +205,12 @@
       <p>重复打开只会唤起托盘里的窗口；非管理员启动自动 UAC 提权；关闭时可选直接退出或最小化到托盘。</p>
     </div>
     <div class="craft-item reveal">
-      <h4>改动全部留痕</h4>
-      <p>写入前先记原值，原子落盘 + 线程锁 + 还原后回读校验。原本不存在的值，还原时直接删除。</p>
+      <h4>写入事务化</h4>
+      <p>写前抓基线（优先级 / 亲和性 / CPU Sets），任一项失败整体回滚，不留半套；原子落盘 + 线程锁 + 还原后回读校验。</p>
     </div>
     <div class="craft-item reveal">
-      <h4>26 MB 单文件</h4>
-      <p>从 44 MB 一路瘦身到 26 MB。窗口底边可自由拉伸高度，下载即用，无需安装。</p>
+      <h4>26.5 MB 单文件</h4>
+      <p>从 44 MB 一路瘦身到 26.5 MB。窗口底边可自由拉伸高度，下载即用，无需安装。</p>
     </div>
   </div>
 </section>
@@ -258,7 +258,7 @@
     </details>
     <details class="faq-item reveal">
       <summary>显卡名称修改安全吗？会不会损坏系统？</summary>
-      <p>只改注册表里的显示名称（DeviceDesc），不动驱动、不碰系统文件，修改前会自动备份原值，随时可以一键恢复。任务管理器 / 设备管理器里的显示名需重启后完全生效。</p>
+      <p>只改注册表里的显示名称（DeviceDesc），不动驱动、不碰系统文件，修改前会自动把原值记入「改动记录」，随时可以一键恢复。任务管理器 / 设备管理器里的显示名需重启后完全生效。</p>
     </details>
     <details class="faq-item reveal">
       <summary>网络加速改了系统设置，能还原吗？</summary>
