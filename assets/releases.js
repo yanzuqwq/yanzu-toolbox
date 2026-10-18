@@ -33,8 +33,8 @@ window.RELEASES = {
     {
       label: "夸克网盘",
       sub: "国内网络加速下载",
-      file: "提取码 Twjj",
-      url: "https://pan.quark.cn/s/ffff54d3580a?pwd=Twjj",
+      file: "提取码 tJ86",
+      url: "https://pan.quark.cn/s/807f262f21e9?pwd=tJ86",
       primary: false
     }
   ],
