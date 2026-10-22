@@ -32,8 +32,8 @@ window.RELEASES = {
     },
     {
       label: "夸克网盘",
-      sub: "旧版备用下载（网盘待更新）",
-      file: "1.4.0 · 提取码 tJ86",
+      sub: "备用下载 · 提取码 tJ86",
+      file: "1.4.1 · 提取码 tJ86",
       url: "https://pan.quark.cn/s/807f262f21e9?pwd=tJ86",
       primary: false
     }
