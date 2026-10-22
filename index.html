@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#131313">
 <title>彦祖工具箱 — Windows 游戏优化工具箱</title>
-<meta name="description" content="彦祖工具箱 —— 显卡名称修改、游戏视觉、应用调度、启动项管理、电源方案、网络加速、杂项功能、改动记录。进游戏前的最后一步。">
-<link rel="icon" type="image/png" href="assets/icon-32.png">
-<link rel="preload" as="image" href="assets/icon.webp">
+<meta name="description" content="彦祖工具箱 —— 显卡名称修改、游戏视觉、分组调度、启动项管理、电源方案、网络加速、杂项功能、改动记录。进游戏前的最后一步。">
+<link rel="icon" type="image/png" href="assets/arcs-favicon.png">
+<link rel="preload" as="image" href="assets/arcs-icon.webp">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body id="top">
@@ -22,7 +22,7 @@
 <!-- 顶部导航 -->
 <header class="nav" id="nav">
   <a class="brand" href="#top">
-    <img class="brand-icon" src="assets/icon.webp" alt="彦祖工具箱图标" width="30" height="30" decoding="async">
+    <img class="brand-icon" src="assets/arcs-icon.webp" alt="彦祖工具箱图标" width="30" height="30" decoding="async">
     <span class="brand-word">彦祖工具箱</span>
   </a>
   <nav class="nav-links">
@@ -49,7 +49,7 @@
       <p class="hero-slogan reveal">Windows 游戏性能调校，一站式完成。</p>
       <p class="hero-desc reveal">
         显卡伪装、画面色彩、进程调度、电源解锁、网络加速 ——
-        进游戏前的最后一步。全部改动事务化，随时可还原。
+        按分组管理程序与调度规则，重要改动留有记录，便于核对与还原。
       </p>
       <div class="hero-actions reveal">
         <a class="btn btn-accent btn-lg" id="hero-download" href="#download">
@@ -61,7 +61,7 @@
       <div class="hero-meta mono reveal">
         <span>免费</span><i>/</i>
         <span>无需安装</span><i>/</i>
-        <span id="hero-size">26.5 MB</span><i>/</i>
+        <span id="hero-size">30.9 MB</span><i>/</i>
         <span>Windows 10 · 11</span>
       </div>
     </div>
@@ -70,7 +70,7 @@
     <div class="mock-wrap reveal" aria-hidden="true">
       <div class="mock-window">
         <div class="mock-titlebar">
-          <img class="mock-logo" src="assets/icon.webp" alt="" width="20" height="20" decoding="async">
+          <img class="mock-logo" src="assets/arcs-icon.webp" alt="" width="20" height="20" decoding="async">
           <span class="mock-title">彦祖工具箱</span>
           <span class="mock-badge">管理员</span>
           <span class="mock-winbtns"><i></i><i></i><i class="close"></i></span>
@@ -79,7 +79,7 @@
           <div class="mock-sidebar">
             <span class="mock-nav">显卡名称修改</span>
             <span class="mock-nav">游戏视觉</span>
-            <span class="mock-nav active">应用调度</span>
+            <span class="mock-nav active">分组调度</span>
             <span class="mock-nav">启动项管理</span>
             <span class="mock-nav">电源方案</span>
             <span class="mock-nav">网络加速</span>
@@ -95,7 +95,7 @@
               </div>
               <span class="bar w90"></span>
               <span class="bar w70"></span>
-              <div class="mock-btns"><span class="mbtn primary">应用调度设置</span><span class="mbtn">重置</span></div>
+              <div class="mock-btns"><span class="mbtn primary">分组调度设置</span><span class="mbtn">重置</span></div>
             </div>
             <div class="mock-foot"><span class="bar w45"></span><span class="bar w25"></span></div>
           </div>
@@ -120,7 +120,7 @@
         <span class="mono feature-tag">REGISTRY</span>
       </div>
       <h3>显卡名称修改</h3>
-      <p>修改注册表显示名，伪装显卡型号让老卡也能进游戏低画质模式。一键备份与恢复，权限不足时主动提醒。</p>
+      <p>修改显卡显示名称，不改变硬件性能。写入前记录原值，可在「改动记录」中查看与还原。</p>
     </article>
 
     <article class="feature reveal">
@@ -137,8 +137,8 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
         <span class="mono feature-tag">AFFINITY / CPU SETS</span>
       </div>
-      <h3>应用调度</h3>
-      <p>7 种进程绑定模式 + 3 种线程级钉核，自动识别渲染线程并锚定高性能核域。GPU 优先级、0.5ms 计时器、启动后自动应用，写入事务化、失败整体回滚。</p>
+      <h3>分组调度</h3>
+      <p>拖放程序调整分组，每组独立设置核心、绑定模式和启停状态。右键成员可配置单独规则，分组与规则跨启动保留，支持同路径多实例。</p>
     </article>
 
     <article class="feature reveal">
@@ -205,12 +205,12 @@
       <p>重复打开只会唤起托盘里的窗口；非管理员启动自动 UAC 提权；关闭时可选直接退出或最小化到托盘。</p>
     </div>
     <div class="craft-item reveal">
-      <h4>写入事务化</h4>
-      <p>写前抓基线（优先级 / 亲和性 / CPU Sets），任一项失败整体回滚，不留半套；原子落盘 + 线程锁 + 还原后回读校验。</p>
+      <h4>调度有据可还原</h4>
+      <p>按进程身份保留首次接管前的基线。真正退出时，如有未还原系统改动，可选择保留或先还原；默认不会自动还原。</p>
     </div>
     <div class="craft-item reveal">
-      <h4>26.5 MB 单文件</h4>
-      <p>从 44 MB 一路瘦身到 26.5 MB。窗口底边可自由拉伸高度，下载即用，无需安装。</p>
+      <h4>30.9 MB 单文件</h4>
+      <p>下载 EXE 后直接运行，无需安装。升级时保留用户数据目录中的分组、成员与规则配置。</p>
     </div>
   </div>
 </section>
@@ -266,11 +266,11 @@
     </details>
     <details class="faq-item reveal">
       <summary>用这类工具会被游戏封号吗？</summary>
-      <p>工具箱只用 Windows 公开接口（注册表 / powercfg / netsh / CIM），不装驱动、不 hook 协议栈、不注入游戏进程、不读写游戏内存，与外挂 / 作弊器有本质区别。</p>
+      <p>工具箱用于系统与调度设置，不代表获得游戏厂商认可。请遵守游戏及反作弊规则；受保护进程可能拒绝操作，不保证所有程序可绑定、性能提升或零封禁风险。</p>
     </details>
     <details class="faq-item reveal">
       <summary>系统要求和安装方式？</summary>
-      <p>Windows 10 / 11（64 位）。单文件约 26 MB，下载即用，无需安装；首次启动会自动请求管理员权限，属正常行为。</p>
+      <p>Windows 10 / 11（64 位）。单文件约 31 MB，下载即用，无需安装；首次启动会自动请求管理员权限，属正常行为。</p>
     </details>
   </div>
 </section>
@@ -279,7 +279,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <a class="brand" href="#top">
-      <img class="brand-icon" src="assets/icon.webp" alt="彦祖工具箱图标" width="30" height="30" decoding="async">
+      <img class="brand-icon" src="assets/arcs-icon.webp" alt="彦祖工具箱图标" width="30" height="30" decoding="async">
       <span class="brand-word">彦祖工具箱</span>
     </a>
     <div class="footer-row mono">
