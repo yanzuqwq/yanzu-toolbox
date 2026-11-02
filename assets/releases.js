@@ -14,26 +14,26 @@
 window.RELEASES = {
   name: "彦祖工具箱",
 
-  /* 最新版本信息（1.4.1 正式版 · 2026-10-23 三道弧面图标构建 · 站内 exe 直链） */
-  latest: "1.4.1",
-  date: "2026-10-20",
-  size: "30.9 MB",
+  /* 最新版本信息（1.4.2 正式版 · 2026-11-02 构建 · 站内 exe 直链） */
+  latest: "1.4.2",
+  date: "2026-11-02",
+  size: "29.0 MB",
   platform: "Windows 10 / 11 · x64",
-  sha256: "4B4AF9FFD5B19F59C4584EAB3F1B20D94DCE07C9CC44BA5345D537B1DFBBCA59",
+  sha256: "7E96427750DBA2E97B5B0B17704C81F65C5AD951C5E1B1779F5BD969D6B7EB3B",
 
   /* 下载渠道：primary 为主按钮 */
   downloads: [
     {
       label: "彦祖工具箱.exe",
       sub: "下载即用，无需安装",
-      file: "1.4.1 · 30.9 MB",
-      url: "download/yanzu-toolbox-1.4.1.exe",
+      file: "1.4.2 · 29.0 MB",
+      url: "download/yanzu-toolbox-1.4.2.exe",
       primary: true
     },
     {
       label: "夸克网盘",
       sub: "备用下载 · 提取码 tJ86",
-      file: "1.4.1 · 提取码 tJ86",
+      file: "1.4.2 · 提取码 tJ86",
       url: "https://pan.quark.cn/s/807f262f21e9?pwd=tJ86",
       primary: false
     }
@@ -42,9 +42,18 @@ window.RELEASES = {
   /* 更新日志（按项目 git 历史整理）：新的版本放最上面，一条一句话就够 */
   history: [
     {
+      version: "1.4.2",
+      date: "2026-11-02",
+      tag: "最新",
+      notes: [
+        "移除宽带测速：卡片、节点选择、结果面板与后台线路代码一并删除，网络加速页只留 DNS 测速、网卡信息、DNS 设置、Nagle、网卡省电与 MAC / IPv4",
+        "新增分辨率切换页：4:3 / 16:9 分别填写宽高与刷新率，独立监视器可禁用，15 秒确认回退，支持 NVIDIA 自定义模式",
+        "DNS 写入改为先记录原配置再执行并校验写后状态；杂项新增 Hyper-V 检测与一键关闭；电源方案预设与开屏预加载优化"
+      ]
+    },
+    {
       version: "1.4.1",
       date: "2026-10-20",
-      tag: "最新",
       notes: [
         "应用调度升级为分组调度，支持拖放归组、独立策略、成员单独规则与配置持久保存",
         "统一圆角菜单与核心选择器，优化启动、退出、异常提示及未还原改动确认；默认不会自动还原"

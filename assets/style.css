@@ -264,7 +264,7 @@ a { color: inherit; }
 }
 .mock-winbtns i.close { background: rgba(255, 99, 99, 0.55); }
 
-.mock-body { display: flex; height: 340px; }
+.mock-body { display: flex; height: 356px; }
 
 .mock-sidebar {
   width: 132px; flex-shrink: 0;
@@ -346,7 +346,7 @@ section[id] { scroll-margin-top: 64px; }
 /* ---------- 功能特性 ---------- */
 .feature-grid {
   max-width: 1280px; margin: 0 auto;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 18px; padding: 44px 48px;
 }
 .feature {
